@@ -1,0 +1,124 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex : 1;
+}
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+.fa-location-dot {
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link {
+    color: #222222 !important;
+}
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+.f-info-links,
+.f-info-social,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-social i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.f-info {
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: #bebebe;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body {
+    padding: 0 !important;
+}
+.card-text p {
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none ;
+    color: #222222;
+}
+.card-img-overlay{
+    opacity : 0;
+}
+.card-img-overlay:hover{
+    opacity : 0.2;
+    background-color : white;
+}
+
+.show-img{
+    height : 30vh;
+}
+.btns{
+    display : flex;
+    gap : 1rem;
+}
+
+.show-btn{
+
+    height : 50px;
+    width : 75px;
+}
+.nav-container{
+    display: flex;
+    justify-content:space-between;
+}
+.index-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem; 
+    justify-content: center; 
+    padding: 1rem; 
+}
+.index-title{
+    margin-left : 20px;
+}
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
+
+/* Optional: Style the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+    border-radius: 10px; /* Rounded corners */
+}

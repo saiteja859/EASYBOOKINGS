@@ -1,0 +1,108 @@
+<%layout("/layouts/boilerplate")%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br /><br />
+            <h3>Create new listing</h3>
+            <form
+                action="/listing"
+                method="POST"
+                novalidate
+                class="needs-validation"
+                enctype="multipart/form-data"
+            >
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input
+                        type="text"
+                        name="title"
+                        placeholder="Enter title"
+                        class="form-control"
+                        required
+                    />
+                    <div class="invalid-feedback">
+                        Please enter valid title.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label"
+                        >Description</label
+                    >
+                    <textarea
+                        name="description"
+                        placeholder="Enter description"
+                        rows="5"
+                        cols="20"
+                        class="form-control"
+                        required
+                    ></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a short description.
+                    </div>
+                </div>
+
+                <!-- <div class="mb-3">
+                    <label for="image" class="form-label">Image URL</label>
+                    <input
+                        type="text"
+                        name="image"
+                        placeholder="Enter URL"
+                        class="form-control"
+                    />
+                </div> -->
+
+                <div class="mb-3">
+                    <label for="image" class="form-label"
+                        >Upload Listing Image</label
+                    >
+                    <input type="file" name="image" class="form-control" required/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input
+                        type="text"
+                        name="price"
+                        placeholder="Enter price"
+                        class="form-control"
+                        required
+                    />
+                    <div class="invalid-feedback">
+                        Please enter valid price.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input
+                        type="text"
+                        name="location"
+                        placeholder="Enter location"
+                        class="form-control"
+                        required
+                    />
+                    <div class="invalid-feedback">
+                        Please enter valid location.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <input
+                        type="text"
+                        name="country"
+                        placeholder="Enter country"
+                        class="form-control"
+                        required
+                    />
+                    <div class="invalid-feedback">
+                        Please enter valid location.
+                    </div>
+                </div>
+                <br /><br />
+                <button class="btn btn-dark">Submit</button>
+                <br /><br />
+            </form>
+        </div>
+    </div>
+</body>

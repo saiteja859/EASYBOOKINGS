@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/listing"
+            ><i class="fa-solid fa-location-dot"></i
+        ></a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-container" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/listing">Explore</a>
+                <a class="nav-link" href="/listing/new">Add new Listing</a>
+            </div>
+            <div class="navbar-nav nav-login">
+                <%if(!currUser){%>
+                <a class="nav-link" href="/signup">Sign Up</a>
+                <a class="nav-link" href="/login">Log In</a>
+                <%}%> <%if(currUser){%>
+                <a class="nav-link" href="/logout">Log Out</a>
+                <%}%>
+            </div>
+        </div>
+    </div>
+</nav>
