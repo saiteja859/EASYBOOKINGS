@@ -52,9 +52,6 @@ npm start
 
 ---
 
-✅ When you push this `README.md` to GitHub, users will automatically see a **"Copy" button** next to each code block. No extra work needed — GitHub does this for all fenced code blocks.
-
-Let me know if you’d like me to include deploy commands or a `.env.example` file too.
 
 
 
